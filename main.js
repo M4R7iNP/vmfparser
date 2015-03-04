@@ -1,7 +1,7 @@
 var vmfparser = (function() {
     if (typeof XRegExp === "undefined") {
         if(typeof require !== "undefined") {
-            XRegExp = require('XRegExp').XRegExp
+            XRegExp = require('xregexp').XRegExp
         } else {
             throw new Error("VMFParser requires XRegExp");
         }
