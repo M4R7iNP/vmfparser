@@ -55,7 +55,7 @@ var vmfparser = (function() {
 
     return function parse(code) {
         var ret = {},
-            res = XRegExp.matchRecursive(code, '{', '}', 'g', {
+            res = XRegExp.matchRecursive(code, '\n\\s*{', '\n\\s*}', 'g', {
                 valueNames: ['key', null, 'value', null]
             });
 
